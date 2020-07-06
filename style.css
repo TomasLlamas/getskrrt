@@ -1,0 +1,131 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  width: 45%;
+  margin: 20px 0;
+  border-radius:25px;
+
+}
+
+.header-background {
+  background-color: black;
+}
+
+.header {
+padding: 20px;
+color: green;
+font-family: 'Monaco', 'Menlo', 'Consolas';
+overflow: hidden;
+border-right: 1px solid white;
+animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+letter-spacing: 2px;
+white-space: nowrap;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.container {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project {
+  border: 3px solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 8px #888888;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project:hover {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.project-image {
+  height: 100px;
+  border-radius: 16px 0 16px 0;
+}
+
+h2 {
+  padding-left: 30px;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bottom {
+  margin: 0 20px;
+}
+
+.languages {
+  color: #9d9c9c;
+}
+
+.profile-image {
+  width: 200px;
+  border-radius: 100px;
+  margin-right: 50px;
+}
+
+.intro {
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #cacaca;
+}
+
+h1, h2, p {
+  padding: 10px;
+}
+
+.outro {
+  background-color: #cacaca;
+}
+
+button {
+  background-color: white;
+  padding: 5px;
+  border-style: none;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 1px 2px 8px #888888;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 2px 4px 8px #888888;
+}
