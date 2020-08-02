@@ -1,122 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155250694-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-155250694-1');
-</script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Kyle Macasilli-Tan">
-    <link rel="icon" href="logo.png">
-    <title>Kyle Macasilli-Tan</title>
-    <link href="style.css" rel="stylesheet" 
-    type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icon128.png" />
+    <link href="style.css" rel="stylesheet" />
+    <title>skrrt</title>
   </head>
   <body>
+    <div id="whole-site">
 
-    <div class="whole">
+        <ul id="navbar">
+            <li class="nav-item"><a href="index.html"><img id="logo" src="icon128.png"></a></li>
+            <li class="nav-item"><a href="index.html">skrrt</a></li>
+          </ul>
 
-    <div class="intro">
-      <div>
-        <img class="profile-image" src="./profile.jpg">
-      </div>
-      <div>
-        <div class="header-background">
-          <h1 class="header">Hey! I'm Kyle Macasilli-Tan.</h1>
+        <!-- <div id="animation">
+          <h1 id="intro"></h1>
+
+
+        </div> -->
+
+
+
+
+        <div class="intro-back">  
+          <div id="intro">
+            <h1 class="header">The new tab that makes your browsing experience faster.</h1>
+            <p class="description">skrrt allows you to minimize wasted time on the new tab screen and allow you to perform functions faster.</p>
+            <button id="signup-button">Get notified for launch</button>
+          </div>
         </div>
-        <p class="description">I'm an incoming sophomore in high school and I've been programming for 5 years, mainly in HTML, CSS, JS, and React.</p>
-      </div>
+        <img id="introimage" src="introimage.svg">
+
+        <div id="container">  
+          <div id="img-width">
+            <img id="header-image" src="https://lh3.googleusercontent.com/AfVG7CTYHjPjeznp1LpasACWD8cO5pBz4JyOvkeG2ISkhBViibsuVpXEtAQNFuatbrQ27zBZ9MY=w640-h400-e365">
+          </div>
+          <div id="text-width">
+            <h1 class="title">Maximize your efficiency by seeing only what you need.</h1>
+            <p class="subtitle">skrrt features a variety of panels in a side scrolling container. Place commonly used panels near the start and move less used panels to the back, still accessible with a quick scroll.</p> 
+          </div>
+        </div>
+
+        <h1 id="main-block-header">Perform tasks on the new tab page instead of searching and opening applications.</h1>   
+        <div id="main-blocks" class="container">
+          <div class="draggable" id="block" draggable="true">
+            <h2 id="block-title">News</h2>
+            <p>All the top headlines, right at your fingertips.</p>
+          </div>
+          <div class="draggable" id="block" draggable="true">
+            <h2 id="block-title">Weather</h2>
+            <p>Stop going to weather.com with automatic weather queries. Seriously.</p>
+          </div>
+          <div class="draggable" id="block" draggable="true">
+            <h2 id="block-title">To-do lists</h2>
+            <p>Organize your tasks and increase efficiency from your new tab page.</p>
+          </div>
+          <div class="draggable" id="block" draggable="true">
+            <h2 id="block-title">Notepad</h2>
+            <p>Need to jot something down? Just use the auto saving notepad.</p>
+          </div>
+        </div>
+
+
+        <div>
+          FAQ
+        </div>
+
+        <img id="outroimage" src="introimage.svg">
+        <div class="outro-back">  
+          <div id="intro">
+            <h1 class="header">Excited? Start now.</h1>
+            <p class="description">Join our email list to be notified when skrrt is out.</p>
+            <button id="signup-button">Get notified for launch</button>
+          </div>
+        </div>
+        <img id="outroimage2" src="introimage.svg">
+
+        <div id="footer">
+          Feedback
+          About
+          Contact
+          Github
+        </div>
+
     </div>
 
-    <h2 class="projects">Here are a few of my projects: </h2>
-
-
-  
-    <div class="container">
-
-      <a href="https://warm-ravine-86373.herokuapp.com/" target="_blank">
-        <div class="project">
-          <div class="top">
-            <img class="project-image" src="./arcade-chatroom.png">
-            <h2>arcade-chatroom</h2>
-          </div>
-          <div class="bottom">
-            <p>A ClubPenguin type social game for hanging out with friends. </p>
-            <p class="languages"><i>Node.js, Socket.io, JS, SVG animations</i></p>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://headline1.netlify.com" target="_blank">
-        <div class="project">
-          <div class="top">
-            <img class="project-image" src="https://lh3.googleusercontent.com/pT0D_kubBRB_TcnsmHTe0vki9mcIW18tQeSqLLokpQQcIzpYIUxPLW5l8wxZKgCrwP1EJHVlT3cefVvoyM5N54H3THfmDbFtZqzpdQU6iG-1M4zOn9xi8KLZNJrYFUU9Jjmb0ENXDJHAMfdq6SyTLQOs723HB27D72SjqBIEdg5Cbx8bObRcFmi860vJ72ldANV60DPQ-l4XV2_aEoXu4ehZUNydM7hc5oD31I4F6U7oojXd4ArgvzB5IPgFjBGFeNLXK2zwJGbXt-P4upui_alFK4Nf4zHdscMazA3KeItJ6P5XoSnEuR0px0_ifB9y0k-J6W_3v0UC-aKaZqiU7cZvg4GBAqaLsfOAXEN7wYTMK801-dPL6ELiT31mauhOo0TdMQY59hmSSdD5bvCzDeaVw_7uwO2ZIz1vK6__7oHqnlHEtFhul5kEyIoznOU5rdpGBYQwS1Do0W7EVsQVxSQc3xLDGC6IzZyfuw5W9UTsi9KHdQEhXHpd8pLnmU4QX1AXr2WrDdNjpcZnHCb1TvYkPUf8x0pNXp1fWm3ckttqLhmBC4hYYTNGOlvwRLEBYcLzN4OKFO2iNBZSfCJGc7M0vmWcNdTQNxCNjaA1uBGabWIWXo4mKJssXDAkYs4wG30hm_384NjGDZBnfoNwY071FbTIak9cq9LG4KFbZYquKTzsf7iqxagigDyBMx4qkvmbfTtlxgmDEArx9OuBeMkXYgg7xZEyXE-x-LpY4L3IV0q7Im-dSw=s265-no">
-            <h2>Headline</h2>
-          </div>
-          <div class="bottom">
-            <p>An online editor for making websites using Markdown text. </p>
-            <p class="languages"><i>React, CSS</i></p>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://night--knight.glitch.me" target="_blank">
-        <div class="project">
-          <div class="top">
-            <img class="project-image" src="https://cdn.glitch.com/2a73e5c8-203f-4311-966a-984b2ced1c16%2FCactus.PNG?v=1580046735527">
-            <h2>Night Knight</h2>
-          </div>
-          <div class="bottom">
-            <p>A 2D retro-style shooter inspired by the Binding of Isaac and Enter the Gungeon. </p>
-            <p class="languages"><i>HTML, CSS, canvas</i></p>
-          </div>
-        </div>
-      </a>
-
-      <a href="platformer.html" target="_blank">
-        <div class="project">
-          <div class="top">
-            <img class="project-image" src="logo.png">
-            <h2>Platformer</h2>
-          </div>
-          <div class="bottom">
-            <p>A simple platformer + shooter. It uses HTML canvas and animates with JavaScript.</p>
-            <p class="languages"><i>HTML, CSS, Canvas</i></p>
-          </div>
-        </div>
-      </a>
-
-      <a href="https://www.fbay.glitch.me" target="_blank">
-        <div class="project">
-          <div class="top">
-            <img class="project-image" src="fbaylogo.png">
-            <h2>FBay</h2>
-          </div>
-          <div class="bottom">
-            <p>A ripoff auctioning website of EBay. </p>
-            <p class="languages"><i>HTML, CSS, JS</i></p>
-          </div>
-        </div>
-      </a>
-    
-    </div>
-
-    <div class="outro">
-      <p>I'm open and interested in working with you or any internship opportunities.</p>
-      <p>You can contact me through my email: kylemacasillitan@gmail.com.</p>
-      <a href="https://github.com/TomasLlamas" target="_blank"><button>Check out my GitHub here.</button></a>
-    </div>
-
-  </div>
-
-
+    <script src="script.js"></script>
   </body>
 </html>

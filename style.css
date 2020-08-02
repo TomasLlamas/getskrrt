@@ -1,131 +1,174 @@
 * {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Inter';
+  overflow-x: hidden;
 }
 
-a {
-  color: black;
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  width: 45%;
-  margin: 20px 0;
-  border-radius:25px;
-
 }
 
-.header-background {
-  background-color: black;
+.nav-item a:hover:not(.active) {
+  /* background-color: #ddd; */
+}
+
+.nav-item a.active {
+  color: white;
+  background-color: #4caf50;
+}
+
+#whole-site {
+  background-color: #333;   
+}
+
+#logo {
+  height: 20px;
+}
+
+.intro-back {
+  background-color: #7026ff;   
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+
+.outro-back {
+  background-color: #7026ff;   
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+}
+
+#introimage {
+  margin-top: -1px;
+  width: 100vw;
+  filter: drop-shadow( 5px 5px 2px rgba(0, 0, 0, .7));
+}
+
+#outroimage {
+  margin-bottom: -5px;
+  width: 100vw;
+  transform: rotate(180deg);
+}
+
+#outroimage2 {
+  margin-top: -2px;
+  width: 100vw;
+  filter: drop-shadow( 5px 5px 2px rgba(0, 0, 0, .7));
+  position: absolute;
+}
+
+#container {
+  margin: auto;
+  padding-top: 10vh; 
+  width: 80vw;
+  height: 90vh;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro {
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .header {
-padding: 20px;
-color: green;
-font-family: 'Monaco', 'Menlo', 'Consolas';
-overflow: hidden;
-border-right: 1px solid white;
-animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-letter-spacing: 2px;
-white-space: nowrap;
+    font-size: 5vw;
+    margin: 20px 0;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.description {
+  font-size: 2vw;
 }
 
-@-webkit-keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.title {
+  font-size: 3vw;
+  margin-bottom: 20px;
+  color: white;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+.subtitle {
+  font-size: 2vw;
+  color: white;
 }
 
-@-webkit-keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
-}
-
-.container {
-  margin: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.project {
-  border: 3px solid;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 1px 2px 8px #888888;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.project:hover {
-  box-shadow: 5px 10px 8px #888888;
-}
-
-.project-image {
-  height: 100px;
-  border-radius: 16px 0 16px 0;
-}
-
-h2 {
-  padding-left: 30px;
-}
-
-.top {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.bottom {
-  margin: 0 20px;
-}
-
-.languages {
-  color: #9d9c9c;
-}
-
-.profile-image {
-  width: 200px;
-  border-radius: 100px;
-  margin-right: 50px;
-}
-
-.intro {
-  padding: 50px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #cacaca;
-}
-
-h1, h2, p {
+#signup-button {
   padding: 10px;
-}
-
-.outro {
-  background-color: #cacaca;
-}
-
-button {
   background-color: white;
-  padding: 5px;
   border-style: none;
   border-radius: 20px;
-  margin: 10px;
-  box-shadow: 1px 2px 8px #888888;
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+  z-index: 100;
+  margin: 20px 0;
 }
 
-button:hover{
-  background-color: black;
+#animation {
+  height: 60vh;
+  padding: 20vh;
+}
+
+#img-width {
+  width: 35vw;
+}
+
+#header-image {
+  width: 35vw;
+}
+
+#text-width {
+  width: 35vw;
+}
+
+#main-blocks {
+  width: 80vw;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.9;
+  margin: auto;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+#main-block-header {
+  margin: 30px auto;
+  width: 70vw;  
   color: white;
-  box-shadow: 2px 4px 8px #888888;
+}
+
+.draggable {
+  cursor: move;
+}
+
+#block {
+  width: 18vw;
+}
+
+#block-title {
+  margin-bottom: 20px;
+}
+
+#footer {
+  height: 10vh;
+  padding-top: 20vh;
+  width: 100%;
+  background-color: #ddd; 
 }
